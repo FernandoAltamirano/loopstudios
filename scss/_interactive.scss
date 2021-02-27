@@ -1,0 +1,41 @@
+.interactive {
+  text-align: center;
+  padding: 2em;
+  color: black;
+  img {
+    width: 90%;
+  }
+  .text {
+    width: 80%;
+    margin: auto;
+    font-size: 0.9em;
+    h1 {
+      margin: 1em 0;
+    }
+    p {
+      color: var(--gray);
+    }
+  }
+  @media (min-width: 768px) {
+    padding: 0;
+    margin: 2em 6em;
+  }
+  @media (min-width: 1024px) {
+    display: flex;
+    margin: 6em 10em;
+    align-items: flex-end;
+    img {
+      width: 70%;
+    }
+    .text {
+      padding-left: 2em;
+      background: white;
+      margin-left: -10em;
+      margin-bottom: 0;
+      text-align: left;
+    }
+  }
+  @media (min-width: 1440px) {
+    margin: 6em 15em;
+  }
+}

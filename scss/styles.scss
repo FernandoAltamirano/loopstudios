@@ -1,0 +1,24 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: var(--alata);
+  color: white;
+}
+.hidden {
+  display: none;
+}
+h1,
+h2 {
+  font-family: var(--josefin);
+}
+:root {
+  --alata: "Alata", sans-serif;
+  --josefin: "Josefin Sans", sans-serif;
+  --gray: hsl(0, 0%, 55%);
+}
+@import "hero";
+@import "interactive";
+@import "cards";
+@import "contact";

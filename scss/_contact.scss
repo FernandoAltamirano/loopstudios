@@ -1,0 +1,44 @@
+.contact {
+  background: #000;
+  text-align: center;
+  padding: 2em 0;
+  font-size: 0.9em;
+  .logo {
+    width: 100px;
+  }
+  .links p {
+    font-size: 0.8em;
+    margin: 2em 0;
+  }
+  .social {
+    margin-top: 1em;
+    img {
+      margin: 0 0.6em;
+    }
+  }
+  footer {
+    margin-top: 2em;
+    opacity: 0.3;
+  }
+  @media (min-width: 1024px) {
+    display: flex;
+    justify-content: space-between;
+    padding: 2em 10em;
+    .left {
+      margin-top: 1em;
+      text-align: left;
+    }
+    .right {
+      text-align: right;
+    }
+    .links {
+      display: flex;
+      p {
+        margin-right: 2em;
+      }
+    }
+  }
+  @media (min-width: 1440px) {
+    padding: 6em 15em;
+  }
+}

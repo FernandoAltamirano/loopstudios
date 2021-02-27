@@ -1,0 +1,97 @@
+.hero {
+  background: url("../images/mobile/image-hero.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  height: 85vh;
+  input {
+    display: none;
+  }
+  .header {
+    padding: 2em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    .logo {
+      width: 100px;
+    }
+    .hamburguer {
+      width: 20px;
+    }
+  }
+  .linksDesktop {
+    display: none;
+  }
+  .links {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    .close {
+      width: 100%;
+      text-align: right;
+      img {
+        padding-right: 2em;
+      }
+    }
+    background: #000;
+    text-align: center;
+    height: 100vh;
+    padding-top: 2em;
+    p {
+      margin-bottom: 2em;
+      font-size: 1.2em;
+    }
+  }
+  .principal {
+    border: 2px solid white;
+    margin: 2em;
+    padding: 1em;
+    margin-top: 6em;
+    line-height: 1.2;
+  }
+  @media (min-width: 768px) {
+    padding: 2em 6em;
+  }
+  @media (min-width: 1024px) {
+    background: url("../images/desktop/image-hero.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    padding: 2em 10em;
+    height: 80vh;
+    .header {
+      padding-left: 0;
+      padding-right: 0;
+      .logo {
+        width: 200px;
+      }
+      .links {
+        display: block;
+      }
+    }
+    label {
+      display: none;
+    }
+    .linksDesktop {
+      display: initial;
+      display: flex;
+      justify-content: space-between;
+      p {
+        margin-right: 1.5em;
+      }
+    }
+    .principal {
+      width: 50%;
+      margin-top: 4em;
+      font-size: 1.5em;
+      margin-left: 0;
+      opacity: 0.8;
+    }
+  }
+  @media (min-width: 1440px) {
+    height: 80vh;
+    padding-left: 15em;
+    padding-right: 15em;
+  }
+}

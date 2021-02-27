@@ -1,0 +1,302 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: var(--alata);
+  color: white;
+}
+
+.hidden {
+  display: none;
+}
+
+h1,
+h2 {
+  font-family: var(--josefin);
+}
+
+:root {
+  --alata: "Alata", sans-serif;
+  --josefin: "Josefin Sans", sans-serif;
+  --gray: hsl(0, 0%, 55%);
+}
+
+.hero {
+  background: url("../images/mobile/image-hero.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  height: 85vh;
+}
+.hero input {
+  display: none;
+}
+.hero .header {
+  padding: 2em;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.hero .header .logo {
+  width: 100px;
+}
+.hero .header .hamburguer {
+  width: 20px;
+}
+.hero .linksDesktop {
+  display: none;
+}
+.hero .links {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  background: #000;
+  text-align: center;
+  height: 100vh;
+  padding-top: 2em;
+}
+.hero .links .close {
+  width: 100%;
+  text-align: right;
+}
+.hero .links .close img {
+  padding-right: 2em;
+}
+.hero .links p {
+  margin-bottom: 2em;
+  font-size: 1.2em;
+}
+.hero .principal {
+  border: 2px solid white;
+  margin: 2em;
+  padding: 1em;
+  margin-top: 6em;
+  line-height: 1.2;
+}
+@media (min-width: 768px) {
+  .hero {
+    padding: 2em 6em;
+  }
+}
+@media (min-width: 1024px) {
+  .hero {
+    background: url("../images/desktop/image-hero.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    padding: 2em 10em;
+    height: 80vh;
+  }
+  .hero .header {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .hero .header .logo {
+    width: 200px;
+  }
+  .hero .header .links {
+    display: block;
+  }
+  .hero label {
+    display: none;
+  }
+  .hero .linksDesktop {
+    display: initial;
+    display: flex;
+    justify-content: space-between;
+  }
+  .hero .linksDesktop p {
+    margin-right: 1.5em;
+  }
+  .hero .principal {
+    width: 50%;
+    margin-top: 4em;
+    font-size: 1.5em;
+    margin-left: 0;
+    opacity: 0.8;
+  }
+}
+@media (min-width: 1440px) {
+  .hero {
+    height: 80vh;
+    padding-left: 15em;
+    padding-right: 15em;
+  }
+}
+
+.interactive {
+  text-align: center;
+  padding: 2em;
+  color: black;
+}
+.interactive img {
+  width: 90%;
+}
+.interactive .text {
+  width: 80%;
+  margin: auto;
+  font-size: 0.9em;
+}
+.interactive .text h1 {
+  margin: 1em 0;
+}
+.interactive .text p {
+  color: var(--gray);
+}
+@media (min-width: 768px) {
+  .interactive {
+    padding: 0;
+    margin: 2em 6em;
+  }
+}
+@media (min-width: 1024px) {
+  .interactive {
+    display: flex;
+    margin: 6em 10em;
+    align-items: flex-end;
+  }
+  .interactive img {
+    width: 70%;
+  }
+  .interactive .text {
+    padding-left: 2em;
+    background: white;
+    margin-left: -10em;
+    margin-bottom: 0;
+    text-align: left;
+  }
+}
+@media (min-width: 1440px) {
+  .interactive {
+    margin: 6em 15em;
+  }
+}
+
+.cards {
+  margin: 2em;
+  color: black;
+}
+.cards .imgDesktop {
+  display: none;
+}
+.cards .card {
+  position: relative;
+  margin-bottom: 1em;
+}
+.cards .card img {
+  width: 100%;
+}
+.cards .card p {
+  color: white;
+  position: absolute;
+  margin-left: 1em;
+  z-index: 10;
+  top: 60px;
+  letter-spacing: 1px;
+}
+.cards .button {
+  display: block;
+  margin: 2em auto;
+  width: 40%;
+  text-align: center;
+  color: black;
+  border: 1px solid black;
+  padding: 0.5em 2em;
+  text-decoration: none;
+  letter-spacing: 2px;
+}
+@media (min-width: 768px) {
+  .cards {
+    margin: 2em 8em;
+    margin-top: 4em;
+  }
+  .cards .imgMobile {
+    display: none;
+  }
+  .cards .imgDesktop {
+    display: initial;
+  }
+  .cards .container-cards {
+    display: grid;
+    margin-top: 2em;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 2em;
+  }
+  .cards .card p {
+    top: 120px;
+  }
+}
+@media (min-width: 1024px) {
+  .cards {
+    margin: 2em 10em;
+  }
+  .cards .button {
+    top: 0;
+    left: 0;
+  }
+  .cards .card p {
+    top: 200px;
+  }
+}
+@media (min-width: 1440px) {
+  .cards {
+    margin: 6em 15em;
+  }
+  .cards .card p {
+    top: 300px;
+  }
+}
+
+.contact {
+  background: #000;
+  text-align: center;
+  padding: 2em 0;
+  font-size: 0.9em;
+}
+.contact .logo {
+  width: 100px;
+}
+.contact .links p {
+  font-size: 0.8em;
+  margin: 2em 0;
+}
+.contact .social {
+  margin-top: 1em;
+}
+.contact .social img {
+  margin: 0 0.6em;
+}
+.contact footer {
+  margin-top: 2em;
+  opacity: 0.3;
+}
+@media (min-width: 1024px) {
+  .contact {
+    display: flex;
+    justify-content: space-between;
+    padding: 2em 10em;
+  }
+  .contact .left {
+    margin-top: 1em;
+    text-align: left;
+  }
+  .contact .right {
+    text-align: right;
+  }
+  .contact .links {
+    display: flex;
+  }
+  .contact .links p {
+    margin-right: 2em;
+  }
+}
+@media (min-width: 1440px) {
+  .contact {
+    padding: 6em 15em;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
